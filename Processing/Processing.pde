@@ -7,7 +7,7 @@ int y = 0;
 void setup() {
   frameRate(40);
   size(500, 650);
-  serialBruh = new Serial(this, Serial.list()[1], 9600);
+  serialBruh = new Serial(this, Serial.list()[2], 9600);
   print(Serial.list());
 }
 
@@ -19,7 +19,7 @@ void draw() {
   // Constrains the coordinates to the grid box thing
 
   float mx = map(cx, 0, 500, 0, 180);
-  float my = map(cy, 0, 500, 0, 180);
+  float my = map(cy, 0, 500, 180, 0);
   // Coordinates of cx and cy mapped betwen 0 and 180
 
   int xdata = (int) mx;
