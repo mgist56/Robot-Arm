@@ -14,6 +14,7 @@ void setup() {
 void draw() {
   background(0, 255, 0);
   // Obnoxious green that fits this assignment
+  ellipse(90, 400, 90, 90);
   float cx = constrain(mouseX, 0, 500);
   float cy = constrain(mouseY, 0, 500);
   // Constrains the coordinates to the grid box thing
